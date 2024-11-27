@@ -7,10 +7,20 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
+  // 添加错误页面配置
+  async redirects() {
+    return [
+      {
+        source: '/404',
+        destination: '/404.html',
+        permanent: true,
+      },
+    ];
+  },
 };
 
-export default nextConfig;
-
 if (process.env.NODE_ENV === 'development') {
-  await setupDevPlatform();
+  await import('@cloudflare/next-on-pages/next-dev').then(mod => mod.setupDevPlatform());
 }
+
+export default nextConfig;

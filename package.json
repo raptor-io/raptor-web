@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pages:dev": "wrangler pages dev --proxy=3000",
-    "preview": "concurrently \"next dev\" \"npm run pages:dev\"",
-    "deploy": "next build && wrangler pages deploy"
+    "pages:dev": "wrangler pages dev out --port 8788",
+    "preview": "npm run build && npm run pages:dev",
+    "deploy": "wrangler pages deploy out"
   },
   "dependencies": {
     "@radix-ui/react-context-menu": "^2.2.2",
