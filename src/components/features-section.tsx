@@ -1,3 +1,4 @@
+import { FeatureCard } from "./feature-card"
 export function Features() {
   return (
     <section className="container flex flex-col items-center gap-6 py-24 sm:gap-7">
@@ -11,46 +12,46 @@ export function Features() {
         On-Chain Acceleration and User-Friendly{" "}
       </p>
       <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 py-10 md:grid-cols-2 lg:grid-cols-4">
-        <undefined
+        <FeatureCard
           icon="Frame"
           title="Visual Builder"
           description="Edit HTML, Tailwind & React components visually."
           className="lg:border-l"
         />
-        <undefined
+        <FeatureCard
           icon="Gauge"
           title="Ease of use"
           description="No new mental models to learn. It feels like magic."
         />
-        <undefined
+        <FeatureCard
           icon="Download"
           title="Code Export"
           description="Export your website to a Next.js & Tailwind app."
         />
-        <undefined
+        <FeatureCard
           icon="Globe"
           title="No lock-in"
           description="Customize without limitations and host anywhere."
         />
-        <undefined
+        <FeatureCard
           icon="Sparkles"
           title="Modern tech stack"
           description="Works with Next.js, Tailwind and Shadcn UI."
           className="lg:border-l lg:border-b-0 hover:bg-gradient-to-b"
         />
-        <undefined
+        <FeatureCard
           icon="LayoutDashboard"
           title="Pre-made templates"
           description="Get started quickly with ready templates and sections."
           className="lg:border-b-0 hover:bg-gradient-to-b"
         />
-        <undefined
+        <FeatureCard
           icon="Palette"
           title="AI Theme Generation"
           description="Generate beautiful themes and color palettes with AI."
           className="lg:border-b-0 hover:bg-gradient-to-b"
         />
-        <undefined
+        <FeatureCard
           icon="CodeXml"
           title="Built for developers"
           description="Reweb is built by developers for developers."
