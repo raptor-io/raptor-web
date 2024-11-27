@@ -6,17 +6,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  trailingSlash: true,
-  // 添加错误页面配置
-  async redirects() {
-    return [
-      {
-        source: '/404',
-        destination: '/404.html',
-        permanent: true,
-      },
-    ];
-  },
 };
 
 if (process.env.NODE_ENV === 'development') {

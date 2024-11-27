@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pages:dev": "wrangler pages dev out --port 8788",
+    "pages:dev": "wrangler pages dev out",
     "preview": "npm run build && npm run pages:dev",
     "deploy": "wrangler pages deploy out"
   },
