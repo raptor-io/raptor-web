@@ -1,4 +1,4 @@
-import { FeatureCard } from "./feature-card"
+import { FeatureCard } from "./feature-card";
 export function Features() {
   return (
     <section className="container flex flex-col items-center gap-6 py-24 sm:gap-7">
