@@ -34,11 +34,31 @@ export function Header() {
       <div className="flex items-center gap-10">
         {/* 桌面端导航菜单 - 在md断点以上显示 */}
         <nav className="hidden items-center justify-end gap-10 md:flex">
-          <NavItem href="/about" label="About" />
           <NavItem href="/docs" label="Docs" />
-          <a href="https://medium.com/@raptorswap" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-purple-500">Blog</a>
-          <a href="https://x.com/raptoramm" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-purple-500">Twitter</a>
-          <a href="https://github.com/raptor-io" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-purple-500">Github</a>
+          <a
+            href="https://medium.com/@raptorswap"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-foreground hover:text-purple-500"
+          >
+            Blog
+          </a>
+          <a
+            href="https://x.com/raptoramm"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-foreground hover:text-purple-500"
+          >
+            Twitter
+          </a>
+          <a
+            href="https://github.com/raptor-io"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-foreground hover:text-purple-500"
+          >
+            Github
+          </a>
         </nav>
         {/* 桌面端"开始使用"按钮 - 在md断点以上显示 */}
         <div className="hidden items-center gap-2 md:flex">
@@ -46,7 +66,12 @@ export function Header() {
             asChild
             className="cursor-pointer bg-purple-500 text-white transition-colors hover:bg-purple-600"
           >
-            <a href="https://app.raptoramm.com/" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+            <a
+              href="https://app.raptoramm.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer"
+            >
               Launch App
             </a>
           </Button>
@@ -60,16 +85,42 @@ export function Header() {
           <nav className="flex flex-col gap-1 pt-2">
             <MobileNavItem href="/about" label="About" />
             <MobileNavItem href="/docs" label="Docs" />
-            <a href="https://medium.com/@raptorswap" target="_blank" rel="noopener noreferrer" className="p-2 text-foreground hover:text-purple-500">Blog</a>
-            <a href="https://x.com/raptoramm" target="_blank" rel="noopener noreferrer" className="p-2 text-foreground hover:text-purple-500">Twitter</a>
-            <a href="https://github.com/raptor-io" target="_blank" rel="noopener noreferrer" className="p-2 text-foreground hover:text-purple-500">Github</a>
+            <a
+              href="https://medium.com/@raptorswap"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-foreground hover:text-purple-500"
+            >
+              Blog
+            </a>
+            <a
+              href="https://x.com/raptoramm"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-foreground hover:text-purple-500"
+            >
+              Twitter
+            </a>
+            <a
+              href="https://github.com/raptor-io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-foreground hover:text-purple-500"
+            >
+              Github
+            </a>
             {/* 移动端"开始使用"按钮 */}
             <Button
               size="lg"
               asChild
               className="mt-2 w-full cursor-pointer bg-purple-500 text-white transition-colors hover:bg-purple-600"
             >
-              <a href="https://app.raptoramm.com/" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+              <a
+                href="https://app.raptoramm.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer"
+              >
                 Launch App
               </a>
             </Button>
