@@ -8,23 +8,23 @@ import { cn } from "@/lib/utils";
 const jersey10Font = localFont({
   src: [
     {
-      path: '../fonts/jersey10-regular.woff2',
-      weight: '400',
-      style: 'normal',
+      path: "../../public/fonts/jersey10-regular.woff2",
+      weight: "400",
+      style: "normal",
     },
     {
-      path: '../fonts/jersey10-regular.woff',
-      weight: '400',
-      style: 'normal',
+      path: "../../public/fonts/jersey10-regular.woff",
+      weight: "400",
+      style: "normal",
     },
     {
-      path: '../fonts/jersey10-regular.ttf',
-      weight: '400',
-      style: 'normal',
+      path: "../../public/fonts/jersey10-regular.ttf",
+      weight: "400",
+      style: "normal",
     },
   ],
-  variable: '--font-jersey10',
-  display: 'swap',
+  variable: "--font-jersey10",
+  display: "swap",
   preload: true,
 });
 
@@ -45,13 +45,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#ffffff" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-        )}
-      >
-        {children}
-      </body>
+      <body className={cn("min-h-screen bg-background font-sans antialiased")}>{children}</body>
     </html>
   );
 }
