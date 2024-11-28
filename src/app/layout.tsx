@@ -8,17 +8,17 @@ import { cn } from "@/lib/utils";
 const jersey10Font = localFont({
   src: [
     {
-      path: "../../public/fonts/jersey10-regular.woff2",
+      path: "../fonts/jersey10-regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../public/fonts/jersey10-regular.woff",
+      path: "../fonts/jersey10-regular.woff",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../../public/fonts/jersey10-regular.ttf",
+      path: "../fonts/jersey10-regular.ttf",
       weight: "400",
       style: "normal",
     },
