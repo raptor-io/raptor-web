@@ -1,16 +1,24 @@
 /** @type {import('next').NextConfig} */
+import crypto from "crypto-browserify";
+import stream from "stream-browserify";
+import assert from "assert/";
+import http from "stream-http";
+import https from "https-browserify";
+import os from "os-browserify/browser";
+import url from "url/";
+
 const nextConfig = {
-  output: 'export',
+  output: "export",
   images: {
     unoptimized: true,
   },
   async headers() {
     return [
       {
-        source: '/:path*',
+        source: "/:path*",
         headers: [
           {
-            key: 'Content-Security-Policy',
+            key: "Content-Security-Policy",
             value: [
               "default-src 'self'",
               "script-src 'self' 'unsafe-inline' 'unsafe-eval' chrome-extension: https: http: blob:",
@@ -18,28 +26,28 @@ const nextConfig = {
               "connect-src 'self' wss: https: http: chrome-extension:",
               "style-src 'self' 'unsafe-inline' https:",
               "img-src 'self' data: https: http: chrome-extension:",
-              "frame-src 'self' chrome-extension:"
-            ].join('; ')
-          }
-        ]
-      }
-    ]
+              "frame-src 'self' chrome-extension:",
+            ].join("; "),
+          },
+        ],
+      },
+    ];
   },
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback = {
         ...config.resolve.fallback,
-        crypto: require.resolve('crypto-browserify'),
-        stream: require.resolve('stream-browserify'),
-        assert: require.resolve('assert/'),
-        http: require.resolve('stream-http'),
-        https: require.resolve('https-browserify'),
-        os: require.resolve('os-browserify/browser'),
-        url: require.resolve('url/'),
-      }
+        crypto,
+        stream,
+        assert,
+        http,
+        https,
+        os,
+        url,
+      };
     }
-    return config
-  }
+    return config;
+  },
 };
 
 export default nextConfig;

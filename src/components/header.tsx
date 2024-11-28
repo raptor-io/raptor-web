@@ -60,9 +60,9 @@ export function Header() {
           <nav className="flex flex-col gap-1 pt-2">
             <MobileNavItem href="/about" label="About" />
             <MobileNavItem href="/docs" label="Docs" />
-            <a href="https://medium.com/@raptorswap" target="_blank" rel="noopener noreferrer" className="px-2 py-2 text-foreground hover:text-purple-500">Blog</a>
-            <a href="https://x.com/raptoramm" target="_blank" rel="noopener noreferrer" className="px-2 py-2 text-foreground hover:text-purple-500">Twitter</a>
-            <a href="https://github.com/raptor-io" target="_blank" rel="noopener noreferrer" className="px-2 py-2 text-foreground hover:text-purple-500">Github</a>
+            <a href="https://medium.com/@raptorswap" target="_blank" rel="noopener noreferrer" className="p-2 text-foreground hover:text-purple-500">Blog</a>
+            <a href="https://x.com/raptoramm" target="_blank" rel="noopener noreferrer" className="p-2 text-foreground hover:text-purple-500">Twitter</a>
+            <a href="https://github.com/raptor-io" target="_blank" rel="noopener noreferrer" className="p-2 text-foreground hover:text-purple-500">Github</a>
             {/* 移动端"开始使用"按钮 */}
             <Button
               size="lg"
