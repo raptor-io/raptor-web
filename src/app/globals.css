@@ -5,10 +5,16 @@
 /* 字体声明 */
 @font-face {
   font-family: "jersey10";
-  src: url("/fonts/jersey10-regular.ttf") format("truetype");
+  src: url("/fonts/jersey10-regular.woff2") format("woff2"),
+       url("/fonts/jersey10-regular.woff") format("woff"),
+       url("/fonts/jersey10-regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  font-feature-settings: "kern" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 @layer base {
@@ -94,7 +100,16 @@
   * {
     @apply border-border;
   }
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+  }
   body {
     @apply bg-background text-foreground;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
