@@ -1,12 +1,4 @@
 /** @type {import('next').NextConfig} */
-import crypto from "crypto-browserify";
-import stream from "stream-browserify";
-import assert from "assert/";
-import http from "stream-http";
-import https from "https-browserify";
-import os from "os-browserify/browser";
-import url from "url/";
-
 const nextConfig = {
   output: "export",
   images: {
@@ -37,13 +29,13 @@ const nextConfig = {
     if (!isServer) {
       config.resolve.fallback = {
         ...config.resolve.fallback,
-        crypto,
-        stream,
-        assert,
-        http,
-        https,
-        os,
-        url,
+        crypto: false,
+        stream: false,
+        assert: false,
+        http: false,
+        https: false,
+        os: false,
+        url: false,
       };
     }
     return config;
