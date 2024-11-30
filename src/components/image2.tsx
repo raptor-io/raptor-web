@@ -9,7 +9,7 @@ export function Image2({ className }: Image2Props) {
   return (
     <Image
       alt="SaaS Dashboard"
-      src="/images/dashboard.png"
+      src="/images/RaptorSwap.png"
       width={1000}
       height={698}
       priority
