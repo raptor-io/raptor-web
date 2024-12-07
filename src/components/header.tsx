@@ -34,7 +34,7 @@ export function Header() {
       <div className="flex items-center gap-10">
         {/* 桌面端导航菜单 - 在md断点以上显示 */}
         <nav className="hidden items-center justify-end gap-10 md:flex">
-          <NavItem href="/docs" label="Docs" />
+          <NavItem href="https://docs.raptoramm.com/" label="Docs" />
           <a
             href="https://medium.com/@raptorswap"
             target="_blank"
@@ -84,7 +84,14 @@ export function Header() {
         <div className="container rounded-b-lg bg-background py-4 text-foreground shadow-xl">
           <nav className="flex flex-col gap-1 pt-2">
             <MobileNavItem href="/about" label="About" />
-            <MobileNavItem href="/docs" label="Docs" />
+            <a
+              href="https://docs.raptoramm.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-foreground hover:text-purple-500"
+            >
+              Docs
+            </a>
             <a
               href="https://medium.com/@raptorswap"
               target="_blank"

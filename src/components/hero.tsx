@@ -72,7 +72,7 @@ export function Hero() {
             "transition-colors",
           )}
         >
-          <Link href="https://medium.com/@raptorswap">Learn More</Link>
+          <Link href="https://docs.raptoramm.com/">Learn More</Link>
         </Button>
         {/* "开始使用"按钮 - 使用默认样式 */}
         <Button
