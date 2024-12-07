@@ -1,7 +1,6 @@
 // 导入必要的组件和依赖
 import Link from "next/link";
 
-import { NavItem } from "@/components/nav-item";
 import { Button } from "@/components/ui/button";
 import { MobileNavbar } from "@/components/mobile-navbar";
 import { MobileNavItem } from "@/components/mobile-nav-item";
@@ -34,7 +33,14 @@ export function Header() {
       <div className="flex items-center gap-10">
         {/* 桌面端导航菜单 - 在md断点以上显示 */}
         <nav className="hidden items-center justify-end gap-10 md:flex">
-          <NavItem href="https://docs.raptoramm.com/" label="Docs" />
+          <a
+            href="https://docs.raptoramm.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-foreground hover:text-purple-500"
+          >
+            Docs
+          </a>
           <a
             href="https://medium.com/@raptorswap"
             target="_blank"
